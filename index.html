@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+</head>
+
+<body>
+    <h1>What is React?</h1>
+    <p style="margin-left: 40px;">React is a JavaScript-based UI development library. Facebook and an open-source
+        developer community run
+        it. Although React is a library rather than a language, it is widely used in web development. The library first
+        appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.</p>
+
+    <h1>Spa and Mpa?</h1>
+    <h3 style="margin-left: 20px;">Single Page Application?</h3>
+    <p style="margin-left: 50px;">A single-page application is an app that works inside a browser and does not require
+        page reloading during use. You are using this type of applications every day. These are, for instance: Gmail,
+        Google Maps, Facebook or GitHub.
+        SPAs are all about serving an outstanding UX by trying to imitate a “natural” environment in the browser — no
+        page reloads, no extra wait time. It is just one web page that you visit which then loads all other content
+        using JavaScript — which they heavily depend on.
+
+        SPA requests the markup and data independently and renders pages straight in the browser. We can do this thanks
+        to the advanced JavaScript frameworks like AngularJS, Ember.js, Meteor.js, Knockout.js .
+        Single-page sites help keep the user in one, comfortable web space where content is presented to the user in a
+        simple, easy and workable fashion.</p>
+    <h3 style="margin-left: 20px;">Multiple Page Application?</h3>
+    <p style="margin-left: 50px;">A multi-page app (MPA) basically means a traditional web application that loads on the
+        server’s side. Each time a
+        user refreshes a page or navigates from one page to another, the browser requests data from the server. As the
+        name suggests, MPAs have multiple pages that function separately at all levels: in development, in the eyes of
+        real users, and from the perspective of search engines. Most modern MPAs are developed with HTML for basic
+        functionality, CSS for styling, and JavaScript for interactive elements. Any large ecommerce site, such as
+        Amazon, that features numerous categories and pages and has both static and interactive elements is an example
+        of a multi-page application</p>
+    <h1>Differene Between Angular and React?</h1>
+    <p style="margin-left: 40px;">
+        AngularJS is a structural framework for developing dynamic web apps, whereas React is a JavaScript library that
+        allows you to build UI components.
+        Angular JS is based on MVC (Model View Controller) whereas React is based on Virtual DOM.
+        Angular is based on Typescript and React is based on JavaScript.
+        AngularJS doesn’t provide adding JavaScript library to the source code while React allows adding JavaScript
+        library to the source code.</p>
+
+    <h1>Library vs FrameWork?</h1>
+    <p style="margin-left: 40px;">However, there are technical differences between them. One core difference between a
+        framework and a library is the use of queries. When using a library, the programmer decides when and where to
+        call it.
+
+        When using a framework, the framework dictates that. It provides the basic framework and tells the programmer
+        what is needed. Accordingly, the necessary code is inserted by the developer and supplements the framework
+        according to the desired function. In the end, however, it is the framework that calls up the code when it needs
+        it and is also responsible for the running of the programme.</p>
+
+    <h1>Virtual Dom Vs Real Dom?</h1>
+    <p style="margin-left: 40px;">
+        The Real DOM represents the web page often called a document with a logical tree and each branch of the tree
+        ends in
+        a node and each node contains object programmers can modify the content of the document using a scripting
+        language like javascript and the changes and updates to the dom are fast because of its tree-like structure but
+        after changes, the updated element and its children have to be re-rendered to update the application UI so the
+        re-rendering of the UI which make the dom slow all the UI components you need to be rendered for every dom
+        update so real dom would render the entire list and not only those item that receives the update
+
+        VDOM is the virtual representation of Real DOM
+        React update the state changes in Virtual DOM first and then it syncs with Real DOM
+        Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will
+        not directly apply to the machine.
+        Virtual DOM is a programming concept where a virtual representation of a UI is kept in memory synced with “Real
+        DOM ” by a library such as ReactDOM and this process is called reconciliation
+        Virtual DOM makes the performance faster, not because the processing itself is done in less time. The reason is
+        the amount of changed information – rather than wasting time on updating the entire page, you can dissect it
+        into small elements and interactions
+    </p>
+
+    <h1>Oneway Data Binding vs Two way?</h1>
+    <p style="margin-left: 40px;">In one-way binding, the data flow is one-directional.
+        This means that the flow of code is from typescript file to Html file.
+        In order to achieve a one-way binding, we used the property binding concept in Angular.
+        In property binding, we encapsulate the variable in Html with square brackets( [ ] ).
+        We will understand this concept through an example in order to make it more comprehensible.
+        In a two-way binding, the data flow is bi-directional.
+        This means that the flow of code is from ts file to Html file as well as from Html file to ts file.
+        In order to achieve a two-way binding, we will use ngModel or banana in a box syntax.
+        To make sure the app doesn’t break, we need to import ‘FormsModule’ from ‘@angular/forms.
+        Any changes to the view are propagated to the component class. Also, any changes to the properties in the
+        component class are reflected in the view.
+        To bind two properties in order to two-way binding works, declare the ngModel directive and set it equal to the
+        name of the property.
+        We will understand the concept through an example in order to make it more comprehensib
+    </p>
+</body>
+
+</html>
